@@ -10,22 +10,19 @@ use Drupal\Core\Ajax\HtmlCommand;
 /**
  * Our example form class
  */
-class AjaxSubmitForm extends FormBase
-{
+class AjaxSubmitForm extends FormBase{
 
   /**
    * {@inheritdoc}
    */
-  public function getFormId()
-  {
+  public function getFormId(){
     return 'ajax_submit_form';
   }
 
   /**
    * {@inheritdoc}
    */
-  public function buildForm(array $form, FormStateInterface $form_state)
-  {
+  public function buildForm(array $form, FormStateInterface $form_state){
 
     $form['message'] = [
       '#type' => 'markup',

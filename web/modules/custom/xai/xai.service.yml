@@ -1,0 +1,3 @@
+services:
+    xai.xai_service:
+        class: Drupal\xai\XaiService
